@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+   <h1>Imagens dinâmicas</h1> 
+   <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+   <picture>
+        <!--A construção dessa tag de imagens deve ser na sequência para funcionar-->
+        <!--Pode ser: P-M-G ou G-M-P-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+   </picture>
+
+   <h1>Reproduzindo áudio</h1>
+        <p>Vamos aprender a reproduzir áudio em HTML5</p>
+        <p>Dependerá muito da compatibilidade.</p>
+            <audio src="Midia/Immortal - NEFFEX.mp3" controls></audio>
+        
+        <!--<p>Outra maneira de adicionar o áudio</p>
+        <audio" preload="none" controls>
+        <source src="Midia/Retribution - NEFFEX.mp3" type="audio/mpeg">
+        <source src="Midia/Retribution - NEFFEX.ogg" type="audio/ogg">
+        <source src="Midia/Retribution - NEFFEX.wav" type="audio/wav">
+        
+        <p>Infelizmente o seu navegador não suporta arquivos de áudio. 
+            <a href="Midia/Retribution - NEFFEX.mp3" target="_blank">Clique aqui para baixar o audio.</a>
+        </p>-->
+        </audio>
+
+    <h1>Reproduzindo Vídeos com HTML5</h1>
+        <p>Para compactar o video, usar o Handbrake (muito útil)</p>
+        <p>Usar a TAG WIDTH para configurar o tamanho da janela de exibição. Nesse exemplo, será de 500.</p>
+        <p>Esse vídeo está hospedado no meu  servidor.</p>
+        <p>Colocar a maioria dos formatos possíveis.</p>
+
+    <video src="video/pexels-cottonbro-6568198.mp4" width="500" height="315" controls></video>
+    
+    <h1>Incorporaçao de vídeos externos</h1>
+        <p>Melhor maneira de adicionar vídeos, pois não onera a capacidade, tampouco deixa o website pesado.</p>
+        <p>Caminho: youtube - compartilhar - incorporar - copiar e configurar o código.</p>
+        <p>Cuidado com os direitos autorais.</p>
+        <p>O vimeo permite que você deixe vídeos públicos ou privados e possui mais configurações (há cobrança!).</p>
+        <iframe width="500" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    
+    
+
+
+
+
+
+
+
+
+
+</body>
+</html>

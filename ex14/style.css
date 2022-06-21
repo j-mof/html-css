@@ -1,0 +1,25 @@
+ @charset "UTF-8";
+
+ 
+ /*Não esquecer o ";" depois de cada declaração.*/
+/** { Configurações globais da CSS*/
+
+    /*height: 100%; 
+}*/
+body{
+    font: normal 16px arial, verdana, serif;
+    text-align: left;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: left;
+}
+
+p{
+    text-align: justify;
+    text-indent: 20px; /*alinhamento do parágrafo*/
+}

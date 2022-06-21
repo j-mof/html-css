@@ -1,0 +1,60 @@
+ @charset "UTF-8";
+
+ 
+ /*Não esquecer o ";" depois de cada declaração.*/
+/** { Configurações globais da CSS*/
+
+    /*height: 100%; 
+}*/
+
+/*Tudo que em HTML é id, em CSS vira #. Utilizar para um único elemento. */
+/*Tudo que em HTML é class, em CSS vira . (ponto). Utilizar para vários elementos.*/
+
+body{
+}
+
+h1{
+    background-color: lightgray;
+    height: 300px;
+    width: 300px;
+    
+    
+    /*border-width: 10px;
+    border-style: solid;
+    border-color: darkgray;
+    posso utilizar shorthands para simplificar:*/
+    border: 10px solid darkgrey;
+
+
+    /*padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    posso utilizar shorthands para simplificar:*/
+    padding: 10px; /*ordem: em cima, direita, baixo, esquerda. Se forem iguais, basta informar uma vez só*/
+
+
+
+    margin: auto; /*Auto para alinhar no meio da página (estranho, mas é isso)!*/
+    /*margin-top: 10px;
+    margin-right:10px ;
+    margin-bottom:10px;
+    margin-left:10px;*/
+    /*posso utilizar shorthands para simplificar:
+    A SETA no dev tools demonstra que o código está simplificado.*/
+    
+
+
+    /*outline-width: 5px; entre a margem e a borda
+    outline-style: dashed; pontilhado
+    outline-color: aquamarine ;*/
+    outline: 5px dashed salmon; /*não utilizar vírgulas.*/
+
+}
+
+a{
+    border-width: 10px;
+    border-style: solid;
+    border-color: red;
+}
+

@@ -1,0 +1,42 @@
+ @charset "UTF-8";
+
+ 
+ /*Não esquecer o ";" depois de cada declaração.*/
+/** { Configurações globais da CSS*/
+
+    /*height: 100%; 
+}*/
+
+/*Tudo que em HTML é id, em CSS vira #. Utilizar para um único elemento. */
+/*Tudo que em HTML é class, em CSS vira . (ponto). Utilizar para vários elementos.*/
+
+
+body{
+   font-family: Arial, Helvetica, sans-serif;  
+}
+
+a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited{
+    color: darkred; /*links visitados ficarão com essa cor*/
+}
+
+a:hover{
+    color: black;
+    text-decoration: underline; /*linha aparece embaixo do link*/
+}
+
+a:active{
+    color: yellow; /*link ficará amarelo quando apertar o botão em cima dele*/
+}
+
+a:after{
+    content: ' [link]';
+    color: lightgray;
+    text-decoration: none;
+    font-weight: normal;
+}

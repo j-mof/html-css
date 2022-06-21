@@ -1,0 +1,102 @@
+ @charset "UTF-8";
+
+ 
+ /*Não esquecer o ";" depois de cada declaração.*/
+/** { Configurações globais da CSS*/
+
+    /*height: 100%; 
+}*/
+
+/*Tudo que em HTML é id, em CSS vira #. Utilizar para um único elemento. */
+/*Tudo que em HTML é class, em CSS vira . (ponto). Utilizar para vários elementos.*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkgrey;
+    margin: 0px;
+
+    
+}
+
+
+header{
+    background-color: white;
+    padding: 10px;  
+    margin: 10px;
+    border-radius: 15px 0px;
+    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.568);
+}
+
+nav {
+    background-color: rgb(109, 107, 107);
+    padding: 3px;
+    box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.486); /*Usar ferramenta do devtools para fazer a sombra mais fácil*/
+    /*se não usar a ferramenta, começar pelo padrão (1px 1px 1px black)*/
+    border-radius: 5px 0px;
+    
+}
+
+nav > a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin-right: 30px;
+    
+    
+
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+
+
+main{
+   
+    
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px 0px;
+    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.568);
+
+
+
+    
+}
+
+article{
+    background-color: lightgrey;
+    padding: 5px;
+    
+
+}
+
+article > aside{
+    background-color: rgb(163, 161, 161);
+
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;
+
+
+}
+
+footer > p{
+    margin: 0px;
+}
+
+
+/*é possível colocar borda com imagens:
+Salvar a imagem e utilizar a TAG border-image-source: url...
+border-image-slice:...
+border-image-repeat:...
+
+é possível fazer um short hand nessa mesma sequencia acima.
+
+*/

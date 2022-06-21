@@ -1,0 +1,15 @@
+ @charset "UTF-8";
+
+ 
+ /*Não esquecer o ";" depois de cada declaração.*/
+* { /*Configurações globais da CSS*/
+    height: 100%;
+
+}
+
+body{
+    background-image: linear-gradient(to bottom, #4ffdc4, #3fccb0, #3d8577);
+    /*pode ser: left, right, top, bottom.
+    Pode ser: radial...*/
+    background-attachment: fixed; /*fixar a rolagem da tela*/
+}

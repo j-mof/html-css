@@ -1,0 +1,280 @@
+ @charset "UTF-8";
+
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+ @font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+ 
+ /*Não esquecer o ";" depois de cada declaração.*/
+/* *{ Configurações globais da CSS*/
+
+    /*height: 100%; 
+}*/
+
+/*Tudo que em HTML é id, em CSS vira #. Utilizar para um único elemento. */
+/*Tudo que em HTML é class, em CSS vira . (ponto). Utilizar para vários elementos.*/
+
+/*variaveis no CSS:
+#c5ebd6
+#83e1ad
+#322c84
+#2fa866
+#1a5c37
+#063d1e
+
+*/
+:root{ /*variaveis para o css: usar -- e nome da var*/
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    --fonte-padrao: Arial, verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', 'cursive';
+    --fonte-android: 'Android', 'cursive';
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family:var(--fonte-padrao)
+    background-color:var(--cor0);
+    margin: 0px;
+}
+
+
+header{
+    
+    background-image: linear-gradient(to bottom,#3ddc84, #2fa866 ,#063d1e);
+    min-height: 150px;
+    text-align: center;
+    
+    padding-top: 40px;  
+    margin: 0px;
+    
+    box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.568);
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    color: white;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.355);
+    font-weight: normal;
+
+
+
+}
+
+header > p{
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 1.2em;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.355);
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.486); /*Usar ferramenta do devtools para fazer a sombra mais fácil*/
+    /*se não usar a ferramenta, começar pelo padrão (1px 1px 1px black)*/
+    
+    
+}
+
+nav > a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor0);
+    padding: 10px;
+    
+    border-radius: 5px;
+    transition-duration: .3s;
+    
+    
+
+}
+nav > a:hover{
+    background-color: var(--cor3); /*muda o fundo quando passar o mouse*/
+    color: var(--cor5); /*muda a cor da letra quando passar o mouse*/
+    
+    
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    min-width: 280px;
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.325);
+    border-bottom-right-radius: 10px; /*para arredondar somente as bordas de baixo*/
+    border-bottom-left-radius: 10px;
+}
+
+div.video{
+    background-color: var(--cor5);
+    margin:  0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+
+
+}
+
+
+main h1{
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    text-align: left;
+    font-size: 1.5em;
+
+
+
+}
+
+main h2{
+    font-family: var(--fonte-android);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    /*background-color: #83e1ad;*/
+    color: var(--cor4);
+    
+    text-indent: 8px;
+    font-size: 1.3em;
+    font-weight: normal;
+    
+
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
+    
+
+}
+main a{
+    color: var(--cor5);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
+}
+
+
+
+
+main img {
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block; /*necessario colocar, pois a imagem não é um bloco*/
+    margin: auto; /*atrelada ao display:block - imagem ficará no centro*/
+}
+
+article{
+    background-color: white;
+    padding: 5px;
+    text-align: justify;
+    
+
+}
+
+aside{
+    
+    background-color: var(--cor1);
+    margin-top: 0px;
+    
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.427);
+
+}
+
+aside > ul{
+    list-style-position: inside;
+    list-style-type: '\2714\00a0\00a0'; /*não é compatível com todo tipo de navegador*/
+    columns: 2;
+
+
+
+}
+
+
+
+
+aside > h3{
+    color: white;
+    background-color: var(--cor4);
+    margin: -10px -10px 0px -10px; /*margem negativa em cima, na direita e na esquerda*/
+    border-radius: 5px 5px 0px 0px ;
+    
+    
+    padding: 10px;
+}
+
+
+
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+
+
+}
+
+
+
+/*é possível colocar borda com imagens:
+Salvar a imagem e utilizar a TAG border-image-source: url...
+border-image-slice:...
+border-image-repeat:...
+
+é possível fazer um short hand nessa mesma sequencia acima.
+
+*/
