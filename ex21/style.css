@@ -1,37 +1,47 @@
  @charset "UTF-8";
 
- 
- /*Não esquecer o ";" depois de cada declaração.*/
-* { /*Configurações globais da CSS*/
-    font-family: Arial, Helvetica, sans-serif;
-    /*height: 100%; */
+
+ * {
+    padding: 0;
+    margin: 0;
 }
 
 body{
-    background-image: linear-gradient(to right, #f1d8c9, #f2c3a7);
-
-
-}
-main{
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px #a88775da ; /*parametros: para o lado, baixo, espalhar, transparência*/
-    width: 600px;
-    padding: 10px;
-    margin: auto;
-}
-
-h1{
-    color: #f39209;
-    text-shadow: 1px 1px 2px #432904ec;
+    background-color: black;
 
 }
 
-h2{
-    color: #125189;
-
+body#div {
+    
+    font-family: 'Verdana', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black;
+    
 }
 
-p{
-    text-align: justify;
+p {
+  
+    font-size: 10px;
+    line-height: 10px;
+    background-image: url('83387.jpg');
+    image-rendering: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, .02);
 }
+
+
+
+
+ 
+
+
+
+
+
